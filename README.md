@@ -17,6 +17,12 @@ Chainlink related contracts that can be deployed are:
 yarn install
 ```
 
+## Compile contracts
+
+```bash
+truffle compile
+```
+
 ## Deploy
 
 Deploy LinkToken to Harmony testnet. Needs `PRIVATE_KEY_LINK` env variable set. 
