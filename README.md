@@ -31,7 +31,7 @@ node scripts/oracle.js
 
 Deploy consumer contract. Make sure to copy the link token address from the link deployment to this script. Needs `PRIVATE_KEY` env variable set.
 ```bash
-node scripts/comsumer.js
+node scripts/consumer.js
 ```
 
 Funding consumer contract so that price request script next succeeds. Make sure to copy the link contract address to this script.
