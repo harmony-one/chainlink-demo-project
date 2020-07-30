@@ -56,11 +56,13 @@ Request price from oracle
 node scripts/request_price.js
 ```
 
-# Job for the demo
+# Steps for the demo
 
 For the demo, we will get the price of ONE in USDT using binance api `https://api.binance.com/api/v1/ticker/price?symbol=ONEUSDT`
 
-Add the following job to your chainlink node.
+1. Deploy oracle contract using link contract address: `0x91738e20e365abde6d48e081446917a4b5c05cb6`
+
+2. Add the following job to your chainlink node using the oracle contract address from previous oracle deployment step.
 
 ```json
 {
@@ -100,6 +102,8 @@ Add the following job to your chainlink node.
   ]
 }
 ```
+
+3. Send your oracle contract address and jobId so that we can include them in the aggregator deployment and invoke price feed.
 
 Deploy an Aggregator with oracles and jobIds for aggregating the price
 
