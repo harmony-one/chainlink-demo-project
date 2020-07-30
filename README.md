@@ -71,7 +71,7 @@ Add the following job to your chainlink node.
         "name": "harmony",
         "body": {
           "endpoint": "oracle",
-          "addresses": ["<YOUR ORACLE CONTRACT ADDRESS HERE>"] //0xbf1b34c593cd18389e0e6d02475f7ca065140a3f
+          "addresses": ["<YOUR ORACLE CONTRACT ADDRESS HERE>"]
         }
       }
     }
