@@ -19,11 +19,19 @@ let options2 = { gasPrice: 1000000000, gasLimit: 6721900 };
 
 const addr = "0x6DCf6e8dB0771A9315C9Cd9Ba0d76980fa128A84";
 oracleContract.methods
-  .getAuthorizationStatus(oracelAddr)
+  .getAuthorizationStatus(addr)
   .call(options2)
   .then((status) => {
-    console.log('authorization status ' + 
-        status
-    );
-    process.exit(0);
+    console.log("authorization status " + status);
+    if (!status) {
+      oracleContract.methods
+        .setFulfillmentPermission(addr, true)
+        .send(options2)
+        .then((response) => {
+          console.log(response.transaction.receipt);
+          process.exit(0);
+        });
+    } else {
+      process.exit(0);
+    }
   });
