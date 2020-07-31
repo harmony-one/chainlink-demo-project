@@ -1,8 +1,7 @@
 require("dotenv").config();
 const { Harmony } = require("@harmony-js/core");
-const { ChainID, ChainType, hexToNumber } = require("@harmony-js/utils");
-const Web3Utils = require('web3-utils');
-const { formatBytes32String, toUtf8Bytes } = require('@harmony-js/contract');
+const { ChainID, ChainType } = require("@harmony-js/utils");
+const { toUtf8Bytes } = require('@harmony-js/contract');
 const { hexlify } = require('@harmony-js/crypto');
 
 const hmy = new Harmony(
