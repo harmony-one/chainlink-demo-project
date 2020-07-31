@@ -61,6 +61,7 @@ node scripts/request_price.js
 For the demo, we will get the price of ONE in USDT using binance api `https://api.binance.com/api/v1/ticker/price?symbol=ONEUSDT`
 
 1. Deploy oracle contract using link contract address: `0x91738e20e365abde6d48e081446917a4b5c05cb6`
+    * Make sure to `setFulfillmentPermission` by running `oracle_more` script with correct address (that is going to fullfill the oracle request) and the newly deployed oracle contract address.
 
 2. Add the following job to your chainlink node using the oracle contract address from previous oracle deployment step.
 
