@@ -130,4 +130,4 @@ node scripts/price_feed.js
 
 ## Testnet ONE to USDT price feed aggregator
 
-Deployed at: `0x7890ae95f70e0f18255a7a7c467665d452a38872`
+Deployed at: `0x05d511aafc16c7c12e60a2ec4dbaf267ea72d420`
