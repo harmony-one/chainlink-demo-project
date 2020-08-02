@@ -6,7 +6,7 @@ const hmy = new Harmony("https://api.s0.b.hmny.io", {
   chainId: ChainID.HmyTestnet,
 });
 // aggregator contract address
-const contractAddr = "0x7890ae95f70e0f18255a7a7c467665d452a38872";
+const contractAddr = "0x05d511aafc16c7c12e60a2ec4dbaf267ea72d420";
 const contractJson = require("../build/contracts/Aggregator.json");
 const contract = hmy.contracts.createContract(contractJson.abi, contractAddr);
 contract.wallet.addByPrivateKey(process.env.PRIVATE_KEY);

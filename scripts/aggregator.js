@@ -13,7 +13,7 @@ const hmy = new Harmony(
   }
 );
 
-const linkAddr = "0xde57a0e1b91e281c7ebab147d05355a72d2eb683";
+const linkAddr = "0x91738e20e365abde6d48e081446917a4b5c05cb6";
 const contractJson = require("../build/contracts/Aggregator.json");
 let contract = hmy.contracts.createContract(contractJson.abi);
 contract.wallet.addByPrivateKey(process.env.PRIVATE_KEY);
