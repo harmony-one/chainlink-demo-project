@@ -127,6 +127,7 @@ node scripts/price_feed.js
 | SNZ Pool          | 0x0185b239a9d2080fd03536213413488a4b171334 | cb0aa54f6b1941ca94de3c82eb5db79b |
 | Stafi Protocol    | 0x702d75a957a623fb7af3cf021a7c4c4223951589 | ff5dcf90d8a94e62ab9547eb9169e473 |
 | Validator Capital | 0x6c6184e1b23d85ca0a13d874ede26adb1fa91cbb | db6879bf38384f5699321db973ba07a5 |
+| Chainode Tech | 0x7694c1d0915ba4f921b8c06805f1f8b5154eab77 | ba017f71c7ad4f2686f83190cb795a08 |
 
 ## Testnet ONE to USDT price feed aggregator
 
